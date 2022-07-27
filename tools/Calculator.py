@@ -40,3 +40,26 @@ class Calculator:
             num = phi * cmath.sinh(gamma * (c.thickness_block - z))
             return num / den
         raise ArithmeticError('Division by 0')
+
+    @staticmethod
+    def contact_temperature_t_xy(c, x, y, z):
+        surface_ratio = 1   # surface ratio will determine the number of iterations
+
+    @staticmethod
+    def t_1(c, z):
+        return Calculator.contact_temperature_phi(c, 0, 0, z)
+
+    @staticmethod
+    def t_2(c, z, iterations):
+        soma = 0
+        for i in range(iterations):
+            soma += 1
+        return soma
+
+    @staticmethod
+    def t_3(c, z):
+        pass
+
+    @staticmethod
+    def t_4(c, z):
+        pass
